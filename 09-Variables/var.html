@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Theme Switcher</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --btn-bg: #800020;
+            --btn-text: #ffffff;
+            --btn-bgs:#f83465;
+            --font-style: 'Georgia', serif;
+        }
+        .fairy-mode {
+            --bg-color: #fce4ec;
+            --text-color: #6a0572;
+            --btn-bg: #ffb6c1;
+            --btn-bgs:#fffcfd;
+            --btn-text: #6a0572;
+            --font-style: 'Courier New', cursive;
+        }
+
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-style);
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            padding-bottom: 20px;
+        }
+
+        button {
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color:var(--btn-bgs) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Aesthetic</h1>
+    <button onclick="toggleTheme()">Switch Theme</button>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("fairy-mode");
+        }
+    </script>
+</body>
+</html>

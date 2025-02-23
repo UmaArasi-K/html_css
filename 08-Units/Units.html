@@ -5,96 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Incredibles - Hero Section</title>
   <style>
-   
-    
-    body {
-      font-family: Arial, sans-serif;
-      background: #ffffff;
+    * {
       box-sizing: border-box;
     }
+    
+    body {
+      font-family:'Times New Roman', Times, serif;
+      background: #ffffff;
+      background-image: url("https://th.bing.com/th/id/R.3dcc38d7b29310ec935a5d31b3dc49ae?rik=8Gl2BfkFQvOJEw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-3ElMerUr3JY%2fUIWXuQTAIZI%2fAAAAAAAAU-c%2fLPRLu_-xrBw%2fs1600%2fthe%2bincreibles%2b_2004_9.jpg&ehk=4TMGkNcHX69n32kdInwrf7yJkhgWUpgtbV6WK56v8ss%3d&risl=&pid=ImgRaw&r=0");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-    .hero {
-
-      padding-top: 10px;
+    .hero-container {
       width: 100vw;
-      height: 300vh;
+      height:100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      background-color: #ebbbbb;
+      justify-content: center;
+      text-align: center;
+      
     }
 
-    .hero h1 {
-      font-size: 3cm;
-      color: #430000;
-    }
-
-    figure {
-      border: 0.2cm solid #1120c5;  
-      padding: 1cm;
-      background: white;
-    }
-
-    figure img {
-      width: 50vw;
-      max-width: 400px; 
-      height:50%;
-    }
-
-    figcaption {
-      font-size: 2vw;
-      color: #320000;
-    }
 
     .superpowers {
-      width: 80vw;
+      background: rgba(117, 165, 237, 0.7);
+      padding: 20px;
+      border-radius: 15px;
       max-width: 600px;
-      background: #75a5ed;
-      border: 1px solid #df7878;
-      border-radius: 5px;
-      padding: 1cm;
+      width:50% ;
+      height: 35%;
     }
 
-    .superpowers h2 {
-      font-size: 2.5vw;
-      color: #7c4343;
+    .superpowers h1 {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
-
     .superpowers ul {
-      list-style: disc;
-      padding-left: 2em;
-      font-size: 1.8vw;
-      color: #532828;
+      list-style: none;
+      color: #f2f2f2;
+      font-size: 22px;
+      text-align: left;
+    }
+    #_rem{
+      font-size: 1rem;
     }
 
-    .superpowers li {
-      padding-bottom: 0.5vh;
+    #_em{
+      font-size: 1em;
+    }
+    
+    .superpowers button {
+      background-color: #ff4747;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .superpowers button:hover {
+      background-color: #e13f3f;
     }
   </style>
 </head>
 <body>
-    <section>
-          <div class="hero">
-    <h1>The Incredibles</h1>
-    <figure>
-      <img src="https://vignette.wikia.nocookie.net/the-incredibles/images/8/87/The_incredibles_league_of_earth's_mightest_heroes.png/revision/latest?cb=20180603001358" alt="The Incredibles" />
-      <figcaption>
-        A family of undercover superheroes, trying to live a quiet suburban life, are forced into action to save the world.
-      </figcaption>
-    </figure>
+  <div class="hero-container">
     <div class="superpowers">
-      <h2>Superpowers</h2>
+      <h1>The Incredibles</h1>
       <ul>
-        <li><strong>Mr. Incredible:</strong> Super strength and durability</li>
-        <li><strong>Elastigirl:</strong> Elasticity and flexibility</li>
+        <li style="font-size: 20px;"><strong>Mr. Incredible:</strong> Super strength and durability</li>
+        <li style="font-size: .8cm;"><strong>Elastigirl:</strong> Elasticity and flexibility</li>
         <li><strong>Violet:</strong> Invisibility and force fields</li>
-        <li><strong>Dash:</strong> Super speed</li>
-        <li><strong>Jack-Jack:</strong> Unpredictable, multiple abilities</li>
+        <li id="_em"><strong>Dash:</strong> Super speed</li>
+        <li id="_rem"><strong>Jack-Jack:</strong> Unpredictable, multiple abilities</li>
       </ul>
+      <button>Click to know more</button>
     </div>
   </div>
-</section>
-
 </body>
 </html>

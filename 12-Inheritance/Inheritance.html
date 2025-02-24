@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Inheritance</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .sidebar {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        .main {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: blue;
+        }
+        #specific {
+            color: red;
+        }
+        .class-selector {
+            color: green;
+        }
+        p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity & Inheritance</h1>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Concepts Covered</h2>
+            <ul>
+                <li>Universal Selector (*)</li>
+                <li>Element Selector</li>
+                <li>Class Selector</li>
+                <li>ID Selector</li>
+                <li>Inline Styles</li>
+                <li>Inheritance</li>
+                <li>Specificity Calculation</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Example: How CSS Rules Apply</h2>
+            <p>This paragraph is affected by the general <code>p</code> selector, making its color purple.</p>
+            <p class="class-selector">This paragraph has a class applied, setting its color to green.</p>
+            <p id="specific">This paragraph has an ID applied, making its color red (overriding the class).</p>
+            <p style="color: orange;">This paragraph has an inline style, making its color orange (highest specificity).</p>
+        </div>
+    </div>
+</body>
+</html>

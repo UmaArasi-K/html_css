@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    background: linear-gradient(to left, #6e7dff, #ab7dff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 350px;
+    border: 2px solid black;
+}
+
+img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+    border-style: double;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    text-align: left;
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgba(82, 246, 246, 0.821);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9c6eff;
+}
+
+
+@media (min-width: 1025px) {
+    .container {
+        padding: 10%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding: 5%;
+    }
+
+    .content {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p,
+    button {
+        font-size: 1em;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p,
+    button {
+        font-size: 0.9em;
+    }
+
+    ul {
+        display: none;
+    }
+}

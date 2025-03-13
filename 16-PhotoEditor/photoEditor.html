@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link href="editor.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">PHOTO EDITOR</h1>
+        <div class="photoeditor">
+            <img id="filterimg" src="img1.jpeg" alt="image">
+            <div class="filters">
+                <button class="blur" onclick="document.getElementById('filterimg').style.filter = 'blur(5px)'">Blur Filter</button>
+                <button class="bright" onclick="document.getElementById('filterimg').style.filter = 'brightness(1.5)'">Bright Filter</button>
+                <button class="grayscale" onclick="document.getElementById('filterimg').style.filter = 'grayscale(50%)'">Grey Filter</button>
+                <button class="sepia" onclick="document.getElementById('filterimg').style.filter = 'sepia(60%)'">sepia Filter</button>
+                <button onclick="document.getElementById('filterimg').style.filter='none'">reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

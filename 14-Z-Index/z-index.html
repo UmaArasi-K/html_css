@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="z-index.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Z-Index Modal</h1>
+        <div class="sample">
+            <p>this has higher z-index</p>
+        </div>
+        <div class="sample2">
+            <p>this has lower z-index</p>
+        </div>
+        <button class="open" onclick="document.getElementById('modal').style.display='block'">open</button>
+        <div id="modal">
+            <div class="modalcontent">
+            <p>a modal</p>
+            <button class="close" onclick="document.getElementById('modal').style.display='none'">close</button>
+        </div>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
